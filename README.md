@@ -21,7 +21,7 @@ docker-composer up -d
 
 ### Agora faça o restore do banco:
 ```
-docker exec -i mysql-container mysql -uroot -pprogramadorabordo < api/db/script.sql
+docker exec -i mysql-container mysql --user=root --password=felipedocker < api/db/script.sql
 ```
 
 Ou entre dentro do container do mysql e rode os [script](https://github.com/Felipe-Dumont/brincando-com-docker/blob/main/api/db/script.sql) na mão.
